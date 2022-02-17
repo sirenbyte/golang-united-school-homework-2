@@ -1,13 +1,15 @@
 package square
 
-const SidesCircle = "SidesCircle"
-const SidesSquare = "SidesSquare"
-const SidesTriangle = "SidesTriangle"
+import "math"
 
-type intCustomType int
+const (
+	SidesCircle   = 0
+	SidesTriangle = 3
+	SidesSquare   = 4
+)
 
-func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
-	/*if sidesNum == SidesCircle {
+func CalcSquare(sideLen float64, sidesNum int) float64 {
+	if sidesNum == SidesCircle {
 		return 2 * sideLen * math.Pi
 	}
 	if sidesNum == SidesSquare {
@@ -16,7 +18,5 @@ func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 	if sidesNum == SidesTriangle {
 		return ((sideLen * sideLen) * math.Sqrt(3)) / 4
 	}
-	return 0*/
-
 	return 0
 }
